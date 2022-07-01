@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+<body class="fst-italic">
+
+    <!-- Contact POP-UP -->
+
+    <div class="contact-container position-fixed start-0">
+
+        <div class="contact bg-dark text-light px-4 pt-3 rounded-3 position-absolute start-50 top-50 translate-middle">
+            <div class="close-contact position-absolute top-0 start-100 translate-middle rounded-circle d-flex justify-content-center align-items-center"><i class="fa-solid fa-xmark w-75 h-75"></i></div>
+            <h2 class="text-center fs-1 mb-3">Contact Us</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" name="name" id="name" required class="rounded-3 bg-dark text-light" placeholder="Your Name..."><br>
+                <label for="phone">Phone:</label><br>
+                <input type="text" name="phone" id="phone" required class="rounded-3 bg-dark text-light" placeholder="+212xxxxxxxxx"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" name="email" id="email" required class="rounded-3  bg-dark text-light" placeholder="pseudo@example.com"><br>
+                <label for="subject">Subject:</label><br>
+                <input type="text" name="subject" id="subject" required class="rounded-3  bg-dark text-light" placeholder="Subject..."><br>
+                <label for="msg">Message:</label><br>
+                <textarea name="msg" id="msg" cols="30" rows="3" class="w-100 text-light" required  placeholder="Message..."></textarea>
+                <button type="submit" class="popUp-btn border-0 px-3 py-2 mt-5 fs-5 rounded-3 text-light translate-middle">Send Message</button>
+            </form>
+         </div>
+
+    </div>
+
+     <!-- --------------------------------------------------------------------- -->
+
+
+
+    <header class="pt-2 pb-3 position-fixed top-0 w-100 ">
+        <nav class="container d-flex align-items-center justify-content-between text-light">
+            <span class="fs-1 logo">Space.<span class="fs-6">com</span></span>
+            <span class="navbar-toggler">
+                <i class="menu-btn fa-solid fa-bars fa-2x pt-3"></i>
+            </span>
+        </nav>
+    </header>
+
+<!-- Navigation-Bar -->
+
+        <div class="navbar-layer position-fixed top-0 w-75 h-100"></div>
+
+        <div class="navbar bg-dark position-fixed top-0 end-0 w-25 h-100">
+            <i class="close-mark fa-solid fa-xmark fa-3x text-light position-absolute top-0 end-0 p-3"></i>
+            <ul class="list-group text-center fs-2 position-absolute top-50 start-50 translate-middle">
+                <li class="list-group-item  bg-dark border-0"><a href="#" class="text-decoration-none text-light">Home</a></li>
+                <li class="list-group-item  bg-dark border-0"><a href="#" class="text-decoration-none text-light">About</a></li>
+                <li class="list-group-item  bg-dark border-0"><a href="#Services" class="text-decoration-none text-light">Services</a></li>
+                <li class="list-group-item  bg-dark border-0"><a href="#" class="text-decoration-none text-light">Portfolio</a></li>
+                <li class="list-group-item  bg-dark border-0"><a href="#" class="text-decoration-none text-light">Contact</a></li>
+            </ul>
+            <div class="themes position-absolute bottom-0 start-50 translate-middle mb-5 d-flex align-items-center justify-content-between">
+                <div class="theme red-theme"></div>
+                <div class="theme orange-theme"></div>
+                <div class="theme blue-theme"></div>
+                <div class="theme green-theme"></div>
+            </div>
+        </div>
+
+
+<!-- Slider -->
+
+
+<div class="slider container-fluid">
+    
+    <div class="slide slide1">
+        <div class="slider-content">
+            <h1>Spiral Galaxy</h1>
+            <p class="text-light fs-3 pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolores ratione excepturi ut omnis unde fugiat rem sint, rerum, cumque ad cupiditate id, eos aspernatur reprehenderit? Voluptatem facilis quaerat et.</p>
+            <span class="contact-btn px-3 py-2 fs-5 rounded-3 text-decoration-none text-light">Contact Us</span>
+        </div>
+    </div>
+    <div class="slide slide2">
+        <div class="slider-content">
+            <h1>Elliptical Galaxy</h1>
+            <p class="text-light fs-3 pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolores ratione excepturi ut omnis unde fugiat rem sint, rerum, cumque ad cupiditate id, eos aspernatur reprehenderit? Voluptatem facilis quaerat et.</p>
+            <span class="contact-btn px-3 py-2 fs-5 rounded-3 text-decoration-none text-light">Contact Us</span>
+        </div>
+    </div>
+    <div class="slide slide3">
+        <div class="slider-content">
+            <h1>Peculiar Galaxy</h1>
+            <p class="text-light fs-3 pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt dolores ratione excepturi ut omnis unde fugiat rem sint, rerum, cumque ad cupiditate id, eos aspernatur reprehenderit? Voluptatem facilis quaerat et.</p>
+            <span class="contact-btn px-3 py-2 fs-5 rounded-3 text-decoration-none text-light">Contact Us</span>
+        </div>
+    </div>
+</div>
+
+    <button class="slider-btn left-slider-btn">&larr;</button>
+    <button class="slider-btn right-slider-btn">&rarr;</button>
+
+    <div class="dots"></div>
+
+<!-- Services -->
+
+<div class="services-container container" id="Services">
+    <div class="row">
+        <h2 class="text-center fw-bold mb-5 fs-1 text-transform-uppercase"><span class="services">Our Services</span></h2>
+    </div>
+    <div class="row col-8 ms-auto me-auto">
+        <h3 class="services-title text-light rounded-3 py-3 ps-4 head1">Service 1</h3>
+        <p class="ps-4 sv1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, vitae itaque! Sint laborum natus quis. Corporis est et soluta consequuntur quos. Impedit repellat ab repellendus? Ut, fugit odit. Ad, molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, vitae itaque! Sint laborum natus quis.</p>
+    </div>
+    <div class="row col-8 ms-auto me-auto">
+        <h3 class="services-title text-light rounded-3 py-3 ps-4 head2">Service 2</h3>
+        <p class="ps-4 sv2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, vitae itaque! Sint laborum natus quis. Corporis est et soluta consequuntur quos. Impedit repellat ab repellendus? Ut, fugit odit. Ad, molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, vitae itaque! Sint laborum natus quis.</p>
+    </div>
+    <div class="row col-8 ms-auto me-auto">
+        <h3 class="services-title text-light rounded-3 py-3 ps-4 head3">Service 3 </h3>
+        <p class="ps-4 sv3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, vitae itaque! Sint laborum natus quis. Corporis est et soluta consequuntur quos. Impedit repellat ab repellendus? Ut, fugit odit. Ad, molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, vitae itaque! Sint laborum natus quis.</p>
+    </div>
+    <span class="contact-btn px-3 py-2 position-absolute start-50 translate-middle mt-5 fs-5 rounded-3 text-decoration-none text-light">Contact Us</span>
+</div>
+
+    
+
+    
+
+
+
+<script src="JS/jquery-3.6.0.min.js"></script>
+<script src="JS/bootstrap.bundle.min.js"></script>
+<script src="JS/all.min.js"></script>
+<script src="JS/script.js"></script>
+</body>
+</html>
