@@ -37,6 +37,7 @@ $(document).ready(function(){
 
 })
 
+
 /* Slider */
 
 let content = document.querySelectorAll('.slide')
@@ -51,35 +52,30 @@ content.forEach(function(el,i){
 })
 
 right_btn.addEventListener('click',function(){
-    if(curent===max -1){
-        curent=0
+    if(curent === max - 1){
+        curent = 0
     }else{
         curent++
     }
     content.forEach(function(el,i){
-        el.style.transform=`translateX(${100 * (i-curent)}%)`
+        el.style.transform = `translateX(${100 * (i - curent)}%)`
     })
 })
 
 left_btn.addEventListener('click',function(){
-    if(curent===0){
-        curent=max -1
+    if(curent === 0){
+        curent = max - 1
     }else{
         curent--
     }
     content.forEach(function(el,i){
-        el.style.transform=`translateX(${100 * (i-curent)}%)`
+        el.style.transform = `translateX(${100 * (i - curent)}%)`
     })
 })
 
-/* Slider Dots */
 
-function creatDot() {
-   content.forEach(function(_,idx){
-      dotcontainer.insertAdjacentHTML('afterbegin',`<button class='dots-circle' data-slide = '${idx}'></button>`)
-   })
-}
-creatDot()
+
+
 
 /* Services */
 
