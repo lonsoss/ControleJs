@@ -13,9 +13,9 @@
 
     <!-- Contact POP-UP -->
 
-    <div class="contact-container position-fixed start-0">
+    <div class="contact-container position-fixed start-0"></div>
 
-        <div class="contact bg-dark text-light px-4 pt-3 rounded-3 position-absolute start-50 top-50 translate-middle">
+    <div class="contact bg-dark text-light px-4 pt-3 rounded-3 position-fixed start-50 translate-middle">
             <div class="close-contact position-absolute top-0 start-100 translate-middle rounded-circle d-flex justify-content-center align-items-center"><i class="fa-solid fa-xmark w-75 h-75"></i></div>
             <h2 class="text-center fs-1 mb-3">Contact Us</h2>
             <form>
@@ -24,7 +24,7 @@
                 <label for="phone">Phone:</label><br>
                 <input type="text" name="phone" id="phone" required class="rounded-3 bg-dark text-light" placeholder="+212xxxxxxxxx"><br>
                 <label for="email">Email:</label><br>
-                <input type="text" name="email" id="email" required class="rounded-3  bg-dark text-light" placeholder="pseudo@example.com"><br>
+                <input type="email" name="email" id="email" required class="rounded-3  bg-dark text-light" placeholder="pseudo@example.com"><br>
                 <label for="subject">Subject:</label><br>
                 <input type="text" name="subject" id="subject" required class="rounded-3  bg-dark text-light" placeholder="Subject..."><br>
                 <label for="msg">Message:</label><br>
@@ -33,13 +33,11 @@
             </form>
          </div>
 
-    </div>
-
      <!-- --------------------------------------------------------------------- -->
 
 
 
-    <header class="pt-2 pb-3 position-fixed top-0 w-100 ">
+    <header class="pt-2 pb-3 col-12 position-fixed top-0 ">
         <nav class="container d-flex align-items-center justify-content-between text-light">
             <span class="fs-1 logo">Space.<span class="fs-6">com</span></span>
             <span class="navbar-toggler">
@@ -96,12 +94,17 @@
             <span class="contact-btn px-3 py-2 fs-5 rounded-3 text-decoration-none text-light">Contact Us</span>
         </div>
     </div>
+    <button class="slider-btn left-slider-btn rounded-3"><i class="fa-solid fa-arrow-left"></i></button>
+    <button class="slider-btn right-slider-btn rounded-3"><i class="fa-solid fa-arrow-right"></i></button>
+
+    <div class="dots-container position-absolute start-50 translate-middle">
+        <button class="dots dot1"></button>
+        <button class="dots dot2"></button>
+        <button class="dots dot3"></button>
+    </div>
 </div>
 
-    <button class="slider-btn left-slider-btn">&larr;</button>
-    <button class="slider-btn right-slider-btn">&rarr;</button>
-
-    <div class="dots"></div>
+    
 
 <!-- Services -->
 
